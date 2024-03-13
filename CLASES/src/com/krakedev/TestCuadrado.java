@@ -23,6 +23,7 @@ public class TestCuadrado {
 		System.out.println("Perimetro 2: "+per2);
 		System.out.println("Area 3: "+area3);
 		System.out.println("Perimetro 3: "+per3);
+		System.out.println("TERMIANDA LA EJECUCION");
 		
 		
 	}
