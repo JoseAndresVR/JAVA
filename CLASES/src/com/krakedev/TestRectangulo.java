@@ -6,6 +6,7 @@ public class TestRectangulo {
 
 		Rectangulo r1 = new Rectangulo(),r2 = new Rectangulo();
 		int area1,area2;
+		double per1,per2;
 		r1.base = 10;
 		r1.altura=5;
 		r2.base = 8;
@@ -13,9 +14,14 @@ public class TestRectangulo {
 		
 		area1 = r1.CArea();		
 		area2 = r2.CArea();
+		per1 = r1.CPer();		
+		per2 = r2.CPer();
 		
-		System.out.println(area1);
-		System.out.println(area2);
+		
+		System.out.println("Area 1: "+area1);
+		System.out.println("Area 2: "+area2);
+		System.out.println("Perimetro 1: "+per1);
+		System.out.println("Perimetro 2: "+per2);
 	}
 
 }
