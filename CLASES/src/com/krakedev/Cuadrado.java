@@ -18,5 +18,8 @@ public class Cuadrado {
 		this.lado = lado;
 	}
 	
+	public Cuadrado(double lado) {
+		this.lado = lado;
+	}
 	
 }

@@ -3,16 +3,16 @@ package com.krakedev;
 public class TestRectangulo {
 
 	public static void main(String[] args) {
-	    Rectangulo r1 = new Rectangulo();
-	    Rectangulo r2 = new Rectangulo();
+	    Rectangulo r1 = new Rectangulo(10,5);
+	    Rectangulo r2 = new Rectangulo(80,3);
 
 	    int area1, area2;
 	    double per1, per2;
 
-	    r1.setBase(10);
+	   /* r1.setBase(10);
 	    r1.setAltura(5);
 	    r2.setBase(8);
-	    r2.setAltura(3);
+	    r2.setAltura(3);*/
 
 	    area1 = r1.CArea();
 	    area2 = r2.CArea();

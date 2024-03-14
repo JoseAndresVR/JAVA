@@ -23,4 +23,9 @@ public class Rectangulo {
 		double perimetro = (base*2)+(altura*2);
 		return perimetro;
 	}
+	
+	public Rectangulo(int base,int altura) {
+		this.base = base;
+		this.altura = altura;
+	}
 }

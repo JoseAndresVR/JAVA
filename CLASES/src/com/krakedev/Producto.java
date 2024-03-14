@@ -31,4 +31,14 @@ public class Producto {
 	}
 	
 	
+	public Producto(String nombre,String descripcion,int stockActual,double precio) {
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.stockActual = stockActual;
+		this.precio = precio;
+		
+	}
+	
+	
+	
 }
