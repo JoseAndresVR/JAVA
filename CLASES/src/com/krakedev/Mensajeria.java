@@ -7,4 +7,6 @@ public class Mensajeria {
 	public void hola(String nombre, String apellido) {
 		System.out.println("Hola "+nombre+" "+apellido);
 	}
+	
+	
 }

@@ -3,16 +3,19 @@ package com.krakedev;
 public class TestPersona {
 
 	public static void main(String[] args) {
-		Persona p;//Cree variable persona
-		p = new Persona();//Cree objeto persona 
-		System.out.println("Hola mundo: "+p.nombre);//accedo a los atributos
-		//relleno los atributos
-		p.nombre = "Jose Andres";
-		p.edad= 17;
-		p.estatura=1.78;
-		System.out.println(p.nombre);
-		System.out.println(p.edad);
-		System.out.println(p.estatura);
+	    Persona p; // Declara variable persona
+	    p = new Persona(); // Crea objeto persona
+	    System.out.println("Hola mundo: " + p.getNombre()); // Accede al atributo nombre utilizando el método getter
+	    
+	    // Rellena los atributos
+	    p.setNombre("Jose Andres");
+	    p.setEdad(17);
+	    p.setEstatura(1.78);
+	    
+	    // Imprime los atributos utilizando los métodos getter
+	    System.out.println(p.getNombre());
+	    System.out.println(p.getEdad());
+	    System.out.println(p.getEstatura());
 	}
 
 }

@@ -3,46 +3,47 @@ package com.krakedev;
 public class TestProducto {
 
 	public static void main(String[] args) {
-		Producto productoA=new Producto(),productoB =new Producto(),productoC=new Producto();
-		//Producto A
-		productoA.nombre="Paracetamol";
-		productoA.descripcion="Resuelve todo";
-		productoA.stockActual=110;
-		productoA.precio=1.2;
-		
-		System.out.println("Producto A");
-		System.out.println("Nombre: "+productoA.nombre);
-		System.out.println("Descripcion: "+productoA.descripcion);
-		System.out.println("Stock: "+productoA.stockActual);
-		System.out.println("Precio: "+productoA.precio);
-		System.out.println("//////////////////////////////////////////////////");
-		//Producto B
-		productoB.nombre="Clonocepan";
-		productoB.descripcion="Resuelve casi todo";
-		productoB.stockActual=100;
-		productoB.precio=1.0;
-		
-		System.out.println("Producto B");
-		System.out.println("Nombre: "+productoB.nombre);
-		System.out.println("Descripcion: "+productoB.descripcion);
-		System.out.println("Stock: "+productoB.stockActual);
-		System.out.println("Precio: "+productoB.precio);
-		System.out.println("//////////////////////////////////////////////////");
-		
-		//Producto C
-		productoC.nombre="Durex";
-		productoC.descripcion="Para las bendiciones";
-		productoC.stockActual=5;
-		productoC.precio=4.5;
+	    Producto productoA = new Producto();
+	    Producto productoB = new Producto();
+	    Producto productoC = new Producto();
 
-		System.out.println("Producto C");
-		System.out.println("Nombre: "+productoC.nombre);
-		System.out.println("Descripcion: "+productoC.descripcion);
-		System.out.println("Stock: "+productoC.stockActual);
-		System.out.println("Precio: "+productoC.precio);
+	    // Producto A
+	    productoA.setNombre("Paracetamol");
+	    productoA.setDescripcion("Resuelve todo");
+	    productoA.setStockActual(110);
+	    productoA.setPrecio(1.2);
 
-		
+	    System.out.println("Producto A");
+	    System.out.println("Nombre: " + productoA.getNombre());
+	    System.out.println("Descripción: " + productoA.getDescripcion());
+	    System.out.println("Stock: " + productoA.getStockActual());
+	    System.out.println("Precio: " + productoA.getPrecio());
+	    System.out.println("//////////////////////////////////////////////////");
 
+	    // Producto B
+	    productoB.setNombre("Clonocepan");
+	    productoB.setDescripcion("Resuelve casi todo");
+	    productoB.setStockActual(100);
+	    productoB.setPrecio(1.0);
+
+	    System.out.println("Producto B");
+	    System.out.println("Nombre: " + productoB.getNombre());
+	    System.out.println("Descripción: " + productoB.getDescripcion());
+	    System.out.println("Stock: " + productoB.getStockActual());
+	    System.out.println("Precio: " + productoB.getPrecio());
+	    System.out.println("//////////////////////////////////////////////////");
+
+	    // Producto C
+	    productoC.setNombre("Durex");
+	    productoC.setDescripcion("Para las bendiciones");
+	    productoC.setStockActual(5);
+	    productoC.setPrecio(4.5);
+
+	    System.out.println("Producto C");
+	    System.out.println("Nombre: " + productoC.getNombre());
+	    System.out.println("Descripción: " + productoC.getDescripcion());
+	    System.out.println("Stock: " + productoC.getStockActual());
+	    System.out.println("Precio: " + productoC.getPrecio());
 	}
 
 }

@@ -1,8 +1,34 @@
 package com.krakedev;
 
 public class Producto {
-	public String nombre;
-	public String descripcion;
-	public int stockActual;
-	public double precio;
+	private String nombre;
+	private String descripcion;
+	private int stockActual;
+	private double precio;
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+	public int getStockActual() {
+		return stockActual;
+	}
+	public void setStockActual(int stockActual) {
+		this.stockActual = stockActual;
+	}
+	public double getPrecio() {
+		return precio;
+	}
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	
+	
 }
