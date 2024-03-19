@@ -83,9 +83,9 @@ public class Estudiante {
 	}
 	
 	public void mostrar() {
-		System.out.println("Nombre="+getNombre()+", Apellido="+getApellido()+", Cedula="+getCedula());
+		System.out.println("Estudiante[Nombre="+getNombre()+", Apellido="+getApellido()+", Cedula="+getCedula()+"]");
 		for(Nota nota:notas) {
-			System.out.println("Nombre de materia="+nota.getMateria().getNombre()+", Codigo="+nota.getMateria().getCodigo()+", Calificacion="+nota.getCalificacion());
+			System.out.println("Materia[Nombre de materia="+nota.getMateria().getNombre()+", Codigo="+nota.getMateria().getCodigo()+", Calificacion="+nota.getCalificacion()+"]");
 		}
 	}
 	
