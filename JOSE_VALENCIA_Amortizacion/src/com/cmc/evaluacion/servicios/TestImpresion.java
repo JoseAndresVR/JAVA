@@ -1,6 +1,6 @@
-package com.cmc.prueba;
+package com.cmc.evaluacion.servicios;
 
-import com.cmc.evaluacion.Cuota;
+import com.cmc.evaluacion.entidades.Cuota;
 
 public class TestImpresion {
 	public static void main(String[] args) {

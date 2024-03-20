@@ -1,11 +1,10 @@
-package com.cmc.prueba;
-
-import com.cmc.evaluacion.Clientes;
-import com.cmc.evaluacion.Prestamo;
-import com.cmc.servicios.Banco;
-import com.cmc.servicios.CalculadoraAmortizacion;
+package com.cmc.evaluacion.servicios;
 
 import java.util.ArrayList;
+
+import com.cmc.evaluacion.entidades.CalculadoraAmortizacion;
+import com.cmc.evaluacion.entidades.Clientes;
+import com.cmc.evaluacion.entidades.Prestamo;
 
 public class TestPrestamo {
     public static void main(String[] args) {
