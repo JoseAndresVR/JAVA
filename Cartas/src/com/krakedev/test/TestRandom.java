@@ -5,6 +5,7 @@ import com.krakedev.entidades.RandomNumber;
 public class TestRandom {
 
 	public static void main(String[] args) {
+		//Reto 21
 		int posicion = RandomNumber.obtenerPosicion();
 		System.out.println("Posicion obtenida : "+ posicion);
 		 if (posicion == 0 || posicion == 1) {
