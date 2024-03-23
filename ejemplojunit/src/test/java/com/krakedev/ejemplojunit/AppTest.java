@@ -1,7 +1,8 @@
 package com.krakedev.ejemplojunit;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 public class AppTest {
 
@@ -19,9 +20,9 @@ public class AppTest {
     
     @Test
     public void TestRestar() {
-    	Calculadora c=new Calculadora();
-    	int resultado = c.restar(10,20);
-    	assertTrue(resultado!=15);
+    	Calculadora r=new Calculadora();
+    	int resultado = r.restar(10,20);
+    	assertTrue(resultado==15);
     }
 
 }
