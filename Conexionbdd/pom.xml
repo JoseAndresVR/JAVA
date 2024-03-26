@@ -32,7 +32,16 @@
 
     <dependencies>
         <!-- Dependencies -->
-    
+    	<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.23.1</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.23.1</version>
+  </dependency>
     
         <!-- Testing dependencies-->
         <dependency>
@@ -60,7 +69,17 @@
     	<version>42.6.2</version>
 	</dependency>
 
-        
+
+	<dependency>
+		<groupId>com.krakedev</groupId>
+		<artifactId>ejemplojunit</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+	<dependency>
+		<groupId>com.krakedev</groupId>
+		<artifactId>ejemploMaven</artifactId>
+		<version>0.0.1</version>
+	</dependency>
     </dependencies>
     
     <build>
