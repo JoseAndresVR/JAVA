@@ -50,6 +50,17 @@ public class Estudiantes {
 		this.email = email;
 		this.codigo_profesor = codi;
 	}
+	
+	public Estudiantes () {
+		
+	}
+	@Override
+	public String toString() {
+		return "Estudiantes [cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email
+				+ ", fecha_nacimiento=" + fecha_nacimiento + ", codigo_profesor=" + codigo_profesor + "]";
+	}
+	
+	
 
 	
 	

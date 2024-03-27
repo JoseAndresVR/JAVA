@@ -2,7 +2,9 @@ package com.krakedev.proyecto.servicios;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -107,5 +109,44 @@ public class AdminEstudiantes {
 				}
 			}
 		}
+		
+		//METODO CONSULTA POR NOMBRE
+		
+		public static ArrayList<Estudiantes> buscarPorNombre(String nombreBusqueda) throws Exception{
+			ArrayList<Estudiantes> estudiante = new ArrayList<Estudiantes>();
+			Connection con = null;
+			PreparedStatement ps=null;
+			ResultSet rs=null;
+			
+			try {
+				con = ConexionBDD.conectar();
+				ps=con.prepareStatement("select * from estudiantes where nombre like ?");
+				ps.setString(1, "%"+nombreBusqueda+"%");
+				rs = ps.executeQuery();
+				while(rs.next()) {
+					String nombre =rs.getString("nombre");
+					String cedula = rs.getString("cedula");
+					Estudiantes e = new Estudiantes();
+					e.setNombre(nombre);
+					e.setCedula(cedula);
+					estudiante.add(e);
+
+				}
+			} catch (Exception e) {
+				LOGGER.error("Error en la busqueda");
+				throw new Exception("Error de busqueda");
+			}finally{
+				try {
+					con.close();
+				} catch (SQLException e) {
+					LOGGER.error("Error con la base de datos");
+					throw new Exception("Error con la base de datos");
+				}
+			}
+			
+			
+			return estudiante;
+		}
+		
 	}
 
