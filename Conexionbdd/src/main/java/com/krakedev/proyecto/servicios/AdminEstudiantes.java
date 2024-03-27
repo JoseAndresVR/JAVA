@@ -148,5 +148,87 @@ public class AdminEstudiantes {
 			return estudiante;
 		}
 		
+		
+		//METODO PARA BUSCRA POR CLAVE PRIMARIA 
+		
+		public static Estudiantes buscarPorCedula(String cedulaE) throws Exception{
+			Estudiantes estudiante = new Estudiantes();
+			Connection con = null;
+			PreparedStatement ps=null;
+			ResultSet rs=null;
+			
+			try {
+				con = ConexionBDD.conectar();
+				ps=con.prepareStatement("select * from estudiantes where cedula = ?");
+				ps.setString(1, cedulaE);
+				rs = ps.executeQuery();
+				if(rs.next()) {
+					String nombre =rs.getString("nombre");
+					String apellido = rs.getString("apellido");
+					String email =rs.getString("email");
+					estudiante.setNombre(nombre);
+					estudiante.setApellido(apellido);
+					estudiante.setEmail(email);
+					
+				}else {
+					return null;
+				}
+			} catch (Exception e) {
+				LOGGER.error("Error en la busqueda");
+				throw new Exception("Error de busqueda");
+			}finally{
+				try {
+					con.close();
+				} catch (SQLException e) {
+					LOGGER.error("Error con la base de datos");
+					throw new Exception("Error con la base de datos");
+				}
+			}
+
+			return estudiante;
+		}
+		
+		//METODO PARA RETORNAR VARIOS REGISTROS 
+		
+		public static ArrayList<Estudiantes> buscarPorEmail(String emailE) throws Exception{
+			ArrayList<Estudiantes> estudiante = new ArrayList<Estudiantes>();
+			Connection con = null;
+			PreparedStatement ps=null;
+			ResultSet rs=null;
+			
+			try {
+				con = ConexionBDD.conectar();
+				ps=con.prepareStatement("select * from estudiantes where email like ?");
+				ps.setString(1, "%"+emailE+"%");
+				rs = ps.executeQuery();
+				while(rs.next()) {
+					String nombre =rs.getString("nombre");
+					String apellido =rs.getString("apellido");
+					String cedula = rs.getString("cedula");
+					Estudiantes e = new Estudiantes();
+					e.setNombre(nombre);
+					e.setApellido(apellido);
+					e.setCedula(cedula);
+					estudiante.add(e);
+
+				}
+			} catch (Exception e) {
+				LOGGER.error("Error en la busqueda");
+				throw new Exception("Error de busqueda");
+			}finally{
+				try {
+					con.close();
+				} catch (SQLException e) {
+					LOGGER.error("Error con la base de datos");
+					throw new Exception("Error con la base de datos");
+				}
+			}
+			
+			
+			return estudiante;
+		}
+		
+		
+		
 	}
 
