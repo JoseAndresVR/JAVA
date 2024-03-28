@@ -1,0 +1,9 @@
+package com.krakedev.servicios;
+
+import javax.ws.rs.Path;
+
+@Path("customers")
+
+public class ClientesServicio {
+	@Path("m1")
+}

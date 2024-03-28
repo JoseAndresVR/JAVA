@@ -1,0 +1,19 @@
+package com.krakedev.servicios;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.Path;
+
+@Path("cliente")
+
+
+public class ServicioClientes {
+	@Path("mt")
+	@GET
+	public String saludar() {
+		return "Hola mundo RWS";
+	}
+}
+
+

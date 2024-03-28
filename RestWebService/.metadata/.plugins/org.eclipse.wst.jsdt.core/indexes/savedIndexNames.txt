@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+D:\JoseA\Documentos\KRAKEDEV\RestWebService\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1273440352.index
