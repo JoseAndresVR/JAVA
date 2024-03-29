@@ -1,0 +1,5 @@
+package com.krakedev.entidades;
+
+public class Entidades {
+	private String nombre,cedula,nuHijos;
+}

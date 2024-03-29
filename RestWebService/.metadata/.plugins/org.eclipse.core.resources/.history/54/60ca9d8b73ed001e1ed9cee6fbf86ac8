@@ -1,0 +1,26 @@
+package com.krakedev.servicios;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.Path;
+@Path("clientes")
+//@Path("/customers")
+public class ServicioClientes {
+	@Path("metodo1")
+	@GET
+   // @GET
+   // @Path("/m1")
+   // @Produces(MediaType.TEXT_PLAIN)
+    public String saludar() {
+        return "¡Hola desde el método saludar!";
+    }
+	
+	@Path("buscar")
+	@GET
+	public Cliente cliente() {
+		return Cliente
+	}
+}
+
+
