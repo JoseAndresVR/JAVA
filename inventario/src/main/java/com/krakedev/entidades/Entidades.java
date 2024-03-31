@@ -1,7 +1,8 @@
 package com.krakedev.entidades;
 
 public class Entidades {
-	private String nombre,cedula,nuHijos;
+	private String nombre,cedula;
+	private int nuHijos;
 
 	public String getNombre() {
 		return nombre;
@@ -19,11 +20,11 @@ public class Entidades {
 		this.cedula = cedula;
 	}
 
-	public String getNuHijos() {
+	public int getNuHijos() {
 		return nuHijos;
 	}
 
-	public void setNuHijos(String nuHijos) {
+	public void setNuHijos(int nuHijos) {
 		this.nuHijos = nuHijos;
 	}
 
@@ -32,7 +33,7 @@ public class Entidades {
 		return "Entidades [nombre=" + nombre + ", cedula=" + cedula + ", nuHijos=" + nuHijos + "]";
 	}
 
-	public Entidades(String nombre, String cedula, String nuHijos) {
+	public Entidades(String nombre, String cedula, int nuHijos) {
 		super();
 		this.nombre = nombre;
 		this.cedula = cedula;
